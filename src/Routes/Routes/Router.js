@@ -3,6 +3,8 @@ import Main from "../../Layout/Main";
 import About from "../../Pages/About/About";
 import Home from "../../Pages/Home/Home";
 import DisplayError from "../../Shared/DisplayError/DisplayError";
+import Login from "../../Shared/Login/Login";
+import Signup from "../../Shared/Signup/Signup";
 
 const router = createBrowserRouter([
     {
@@ -17,15 +19,15 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element:<About></About>
-            }
-            // {
-            //     path: '/login',
-            //     element: <Login></Login>
-            // },
-            // {
-            //     path: '/signup',
-            //     element: <SignUp></SignUp>
-            // },
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/signup',
+                element: <Signup></Signup>
+            },
         ]
     },
   
