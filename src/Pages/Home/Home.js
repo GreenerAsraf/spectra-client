@@ -1,12 +1,21 @@
 import React from 'react';
-import Footer from '../../Shared/Footer/Footer';
-import Navbar from '../../Shared/Navbar/Navbar';
+import Login from '../../Shared/Login/Login';
+import Media from '../Media/Media';
+import MyMedia from '../Media/MyMedia';
 
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Footer></Footer>
+          <h1 className='text-6xl text-primary'>Welcome to Spectra </h1>
+          <p className='text-4xl text-stone-600'>Your personal mirror to share with world</p>
+
+          <br></br>
+        <Login></Login>
+          {/* <Media></Media>
+          <MyMedia></MyMedia> */}
+         
+         <br/>
+          {/* <MyMedia></MyMedia> */}
         </div>
     );
 };
